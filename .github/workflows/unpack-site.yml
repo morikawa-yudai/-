@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "package/part09.b64"
+      - "marutto-deploy.zip"
 
 permissions:
   contents: write
@@ -14,9 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rebuild package
-        run: |
-          cat package/part*.b64 | tr -d '\n' | base64 -d > marutto-deploy.zip
       - name: Unpack site
         run: |
           unzip -o marutto-deploy.zip

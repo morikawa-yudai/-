@@ -2,187 +2,72 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>まるっと便｜オフィスの困ったを、ぜんぶ、まるっと。</title>
 <meta name="description" content="オフィス移転、買取・リユース、処分・廃棄、清掃、IT・OAサポートまで。オフィスの困りごとをまるっと便がワンストップで解決します。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800;900&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">\n<link rel="stylesheet" href="marutto-home.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}
+.ref-wrap{width:100%;max-width:1440px;margin:0 auto;position:relative;background:#fff;overflow:hidden}
+.ref-img{width:100%;height:auto;display:block;opacity:0;transition:opacity .12s linear}
+.ref-img.ready{opacity:1}
+.ref-hot{position:absolute;display:block;z-index:5;border:0;background:transparent;text-indent:-9999px;overflow:hidden}
+.ref-hot:focus-visible{outline:3px solid rgba(0,174,232,.55);outline-offset:-3px}
+.loading{position:absolute;inset:0;display:grid;place-items:center;background:#fff;color:#8aa6b4;font:600 12px/1.4 sans-serif;letter-spacing:.08em;z-index:2}
+.loaded .loading{display:none}
+/* hotspot positions are percentage-based against the approved 941x1672 reference */
+.hot-services{left:35.5%;top:.8%;width:11.5%;height:3.5%}
+.hot-cases{left:47.5%;top:.8%;width:10%;height:3.5%}
+.hot-reasons{left:57.8%;top:.8%;width:12%;height:3.5%}
+.hot-faq{left:70%;top:.8%;width:12%;height:3.5%}
+.hot-contact-head{left:81.3%;top:.25%;width:16.6%;height:4.2%}
+.hot-contact-hero{left:4.2%;top:19.1%;width:26.5%;height:4%}
+.hot-services-hero{left:32.2%;top:19.1%;width:18.5%;height:4%}
+.hot-move{left:27.4%;top:35.1%;width:42%;height:10.5%}
+.hot-reuse{left:3.2%;top:48%;width:31.5%;height:11.2%}
+.hot-dispose{left:65.2%;top:48%;width:31.5%;height:11.2%}
+.hot-contact-bottom{left:39%;top:87.5%;width:26.5%;height:4.8%}
+@media(max-width:700px){
+  .ref-wrap{width:100%;max-width:none}
+}
+</style>
 </head>
 <body>
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand brand-img-wrap" href="#top"><img class="brand-img" src="data:image/webp;base64,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" alt="まるっと便"></a><div class="brand-copy">まるっと、<br>まかせよう。</div>
-    <nav class="desktop-nav">
-      <a href="#services">サービス一覧</a>
-      <a href="#cases">導入事例</a>
-      <a href="#reasons">選ばれる理由</a>
-      <a href="#faq">よくあるご質問</a>
-    </nav>
-    <a class="header-cta" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
-    <button class="menu-button" aria-label="メニューを開く" aria-expanded="false">☰</button>
-  </div>
-  <nav class="mobile-nav" aria-hidden="true">
-    <a href="#services">サービス一覧</a>
-    <a href="#cases">導入事例</a>
-    <a href="#reasons">選ばれる理由</a>
-    <a href="#faq">よくあるご質問</a>
-    <a href="contact.html">無料で相談する →</a>
-  </nav>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <span class="deco deco-hero-a"></span><span class="deco deco-hero-b"></span>
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <h1>
-          <span class="h1-line">オフィスの困ったを、</span>
-          <span class="h1-line">ぜんぶ、<em>まるっと。</em></span>
-        </h1>
-        <p class="hero-services">配送・人材・処分・清掃・買取・サポート・採用・SNS・OA機器まで</p>
-        <p class="hero-lead">オフィスに関わるあらゆる悩みを、まるっと便がワンストップで解決。<br>面倒な手配や業者探しは、もう必要ありません。</p>
-
-        <div class="hero-actions">
-          <a class="btn btn-yellow" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
-          <a class="btn btn-outline" href="#services">サービスを見る <b>→</b></a>
-        </div>
-
-        <div class="hero-trust">
-          <span>相談無料</span>
-          <span>一都三県を中心に対応</span>
-          <span>法人・個人事業主どちらもOK</span>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <img class="hero-photo" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=90" alt="明るいオフィス">
-        <div class="hero-handwrite">まるっと、<br>まかせよう。</div>
-        <div class="hero-wall-logo"><b>まるっと便</b><small>MARUTTO BIN</small></div>
-        <div class="hero-bubble">オフィスの<br>「困った」を<br>まるっと解決!</div>
-        <img class="hero-daruma" src="assets/daruma-main.webp" alt="福をまるっと だるま">
-      </div>
-    </div>
-  </section>
-
-  <section class="services-section" id="services">
-    <span class="shape shape-a"></span><span class="shape shape-b"></span><span class="shape shape-c"></span><span class="shape shape-d"></span>
-    <div class="container">
-      <div class="section-title centered">
-        <p>＼ まるっと便の<span>3つ</span>のサービス ／</p>
-        <h2>3つのサービスでオフィスの困りごとを解決</h2>
-      </div>
-
-      <div class="service-stage">
-        <a class="service-card service-move" href="move.html">
-          <div class="service-icon blue"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
-          <div class="service-copy">
-            <h3>移転</h3>
-            <p>オフィス移転を<br>スムーズにサポート</p>
-            <div class="chips"><span>移転作業</span><span>レイアウト変更</span><span>内装・原状回復</span></div>
-          </div>
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=84" alt="オフィス移転">
-        </a>
-
-        <div class="service-lower">
-          <a class="service-card service-reuse" href="reuse.html">
-            <div class="service-icon green"><i class="fa-solid fa-yen-sign" aria-hidden="true"></i></div>
-            <div class="service-copy">
-              <h3>買取・リユース</h3>
-              <p>オフィス家具・備品を<br>しっかり買取・リユース</p>
-              <div class="chips"><span>オフィス家具</span><span>OA機器</span><span>什器・備品</span></div>
-            </div>
-            <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=700&q=84" alt="オフィス家具">
-          </a>
-
-          <div class="service-center">
-            <svg class="cycle-svg" viewBox="0 0 300 300" aria-hidden="true">
-              <path class="cycle-blue" d="M66 119 A98 98 0 0 1 148 54"/>
-              <polygon class="cycle-blue-fill" points="145,42 166,54 146,67"/>
-              <path class="cycle-red" d="M180 55 A98 98 0 0 1 249 145"/>
-              <polygon class="cycle-red-fill" points="260,139 251,161 239,143"/>
-              <path class="cycle-green" d="M236 211 A101 101 0 0 1 88 237"/>
-              <polygon class="cycle-green-fill" points="80,225 74,247 96,240"/>
-            </svg>
-            <div class="center-disc">
-              <strong>まるっと</strong>
-              <span>オフィスの<br>あらゆるお困りごとを<br>ワンストップで</span>
-            </div>
-            <img src="assets/daruma-main.webp" alt="福をまるっと だるま">
-          </div>
-
-          <a class="service-card service-dispose" href="dispose.html">
-            <div class="service-icon coral"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></div>
-            <div class="service-copy">
-              <h3>処分・廃棄</h3>
-              <p>不用品の処分を<br>まとめて解決</p>
-              <div class="chips"><span>不用品回収</span><span>産業廃棄物処理</span><span>機密書類</span></div>
-            </div>
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=84" alt="オフィス不用品の処分">
-          </a>
-        </div>
-      </div>
-
-      <div class="support-panel">
-        <div class="support-lead">こんなことも<br><strong>まるっと対応!</strong></div>
-        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-broom-ball" aria-hidden="true"></i></div><div><b>オフィス清掃</b><span>定期・スポット清掃も</span></div></div>
-        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div><div><b>IT・OAサポート</b><span>機器の導入・設定も</span></div></div>
-        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div><div><b>各種手続きサポート</b><span>行政手続きもおまかせ</span></div></div>
-        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></div><div><b>その他のご相談</b><span>どんなお悩みもお気軽に</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="reasons-section" id="reasons">
-    <div class="container">
-      <div class="section-title centered reason-title"><p>＼ まるっと便が選ばれる<span>4つ</span>の理由 ／</p></div>
-      <div class="reasons-grid">
-        <article><span class="reason-no">01</span><div class="reason-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div><h3>ワンストップで解決</h3><p>移転から買取・処分、各種サポートまで、窓口ひとつでスムーズに対応します。</p></article>
-        <article><span class="reason-no">02</span><div class="reason-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div><h3>グループの総合力</h3><p>買取・処分まで連携して対応。使えるものは活かし、不要なものは適正に処理します。</p></article>
-        <article><span class="reason-no">03</span><div class="reason-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div><h3>相談しやすい</h3><p>「何から決めればいいかわからない」という段階から、担当者が丁寧に整理します。</p></article>
-        <article><span class="reason-no">04</span><div class="reason-icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div><h3>一都三県を中心に対応</h3><p>東京・埼玉・千葉・神奈川を中心に、内容に応じて柔軟にご相談いただけます。</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="cases-section" id="cases">
-    <div class="container cases-inner">
-      <div><span class="mini-label">CASE / SUPPORT</span><h2>「どこに頼めばいい？」を、<br>なくしていく。</h2><p>移転担当者さまの負担を減らすために、案件ごとに必要な作業を整理し、最適な進め方をご提案します。</p></div>
-      <ul><li>移転と同時に不用品を整理したい</li><li>売れる家具は買い取ってほしい</li><li>OA機器やネットワークもまとめたい</li><li>退去日までに原状回復まで終わらせたい</li></ul>
-    </div>
-  </section>
-
-  <section class="faq-section" id="faq">
-    <div class="container faq-wrap">
-      <div class="faq-heading"><span>FAQ</span><h2>よくあるご質問</h2><p>内容がまだ固まっていなくても大丈夫です。</p></div>
-      <div class="faq-list">
-        <details open><summary>移転と処分・買取をまとめて依頼できますか？</summary><p>はい。まるっと便では移転・買取・処分をひとつの窓口でまとめてご相談いただけます。</p></details>
-        <details><summary>オフィス家具1点だけでも相談できますか？</summary><p>案件規模にかかわらずご相談可能です。まずは内容と場所をお聞かせください。</p></details>
-        <details><summary>まだ日程や数量が決まっていません。</summary><p>問題ありません。現状を伺いながら、必要な作業と進め方を一緒に整理します。</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <div class="contact-shell">
-      <img src="assets/daruma-main.webp" alt="福をまるっと だるま">
-      <div class="contact-copy"><b>オフィスのことなら<br>まずはお気軽にご相談ください!</b><span>内容が決まっていなくてもOKです。</span></div>
-      <a class="btn btn-yellow contact-main" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
-      <a class="contact-phone" href="tel:0488789116"><span>お電話でのご相談もOK</span><strong>048-878-9116</strong><small>平日 9:00〜17:00</small></a>
-    </div>
-  </section>
+<main class="ref-wrap" id="refWrap" aria-label="まるっと便">
+  <div class="loading">DESIGN LOADING...</div>
+  <img id="refImage" class="ref-img" alt="まるっと便 オフィスのお悩み解決サイト">
+  <a class="ref-hot hot-services" href="#services" aria-label="サービス一覧">サービス一覧</a>
+  <a class="ref-hot hot-cases" href="works.html" aria-label="導入事例">導入事例</a>
+  <a class="ref-hot hot-reasons" href="#reasons" aria-label="選ばれる理由">選ばれる理由</a>
+  <a class="ref-hot hot-faq" href="faq.html" aria-label="よくあるご質問">よくあるご質問</a>
+  <a class="ref-hot hot-contact-head" href="contact.html" aria-label="無料で相談する">無料で相談する</a>
+  <a class="ref-hot hot-contact-hero" href="contact.html" aria-label="無料で相談する">無料で相談する</a>
+  <a class="ref-hot hot-services-hero" href="#services" aria-label="サービスを見る">サービスを見る</a>
+  <a class="ref-hot hot-move" href="move.html" aria-label="移転">移転</a>
+  <a class="ref-hot hot-reuse" href="reuse.html" aria-label="買取・リユース">買取・リユース</a>
+  <a class="ref-hot hot-dispose" href="dispose.html" aria-label="処分・廃棄">処分・廃棄</a>
+  <a class="ref-hot hot-contact-bottom" href="contact.html" aria-label="無料で相談する">無料で相談する</a>
+  <span id="services" style="position:absolute;top:27.8%;left:0"></span>
+  <span id="reasons" style="position:absolute;top:68.8%;left:0"></span>
 </main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <a class="brand footer-brand brand-img-wrap" href="#top"><img class="brand-img" src="data:image/webp;base64,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" alt="まるっと便"></a>
-    <div class="footer-tagline">まるっと、<br>まかせよう。</div>
-    <nav><a href="#services">サービス一覧</a><a href="#cases">導入事例</a><a href="#reasons">選ばれる理由</a><a href="#faq">よくあるご質問</a><a href="company.html">会社情報</a></nav>
-    <div class="footer-legal"><a href="privacy.html">プライバシーポリシー</a><span>© YAMADA TRANSPORT Co., Ltd.</span></div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+<script>
+(async()=>{
+  const parts=await Promise.all(
+    Array.from({length:19},(_,i)=>fetch('/ref/chunk'+String(i+1).padStart(2,'0')+'.txt',{cache:'force-cache'}).then(r=>{
+      if(!r.ok) throw new Error('chunk '+(i+1));
+      return r.text();
+    }))
+  );
+  const img=document.getElementById('refImage');
+  img.onload=()=>{
+    img.classList.add('ready');
+    document.getElementById('refWrap').classList.add('loaded');
+  };
+  img.src='data:image/webp;base64,'+parts.join('');
+})().catch(()=>{
+  document.querySelector('.loading').textContent='ページを再読み込みしてください';
+});
+</script>
 </body>
 </html>

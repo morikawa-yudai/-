@@ -7,8 +7,8 @@
 <meta name="description" content="オフィス移転、買取・リユース、処分・廃棄、清掃、IT・OAサポートまで。オフィスの困りごとをまるっと便がワンストップで解決します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="marutto-home.css">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800;900&family=M+PLUS+Rounded+1c:wght@700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">\n<link rel="stylesheet" href="marutto-home.css">
 </head>
 <body>
 <header class="site-header">
@@ -24,7 +24,7 @@
       <a href="#reasons">選ばれる理由</a>
       <a href="#faq">よくあるご質問</a>
     </nav>
-    <a class="header-cta" href="contact.html"><span class="mail-icon">✉</span>無料で相談する <b>→</b></a>
+    <a class="header-cta" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
     <button class="menu-button" aria-label="メニューを開く" aria-expanded="false">☰</button>
   </div>
   <nav class="mobile-nav" aria-hidden="true">
@@ -49,7 +49,7 @@
         <p class="hero-lead">オフィスに関わるあらゆる悩みを、まるっと便がワンストップで解決。<br>面倒な手配や業者探しは、もう必要ありません。</p>
 
         <div class="hero-actions">
-          <a class="btn btn-yellow" href="contact.html"><span class="mail-icon">✉</span>無料で相談する <b>→</b></a>
+          <a class="btn btn-yellow" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
           <a class="btn btn-outline" href="#services">サービスを見る <b>→</b></a>
         </div>
 
@@ -61,7 +61,7 @@
       </div>
 
       <div class="hero-visual">
-        <img class="hero-photo" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=88" alt="明るいオフィス">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=90" alt="明るいオフィス">
         <div class="hero-handwrite">まるっと、<br>まかせよう。</div>
         <div class="hero-wall-logo"><b>まるっと便</b><small>MARUTTO BIN</small></div>
         <div class="hero-bubble">オフィスの<br>「困った」を<br>まるっと解決!</div>
@@ -80,7 +80,7 @@
 
       <div class="service-stage">
         <a class="service-card service-move" href="move.html">
-          <div class="service-icon blue">🚚</div>
+          <div class="service-icon blue"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
           <div class="service-copy">
             <h3>移転</h3>
             <p>オフィス移転を<br>スムーズにサポート</p>
@@ -91,7 +91,7 @@
 
         <div class="service-lower">
           <a class="service-card service-reuse" href="reuse.html">
-            <div class="service-icon green">¥</div>
+            <div class="service-icon green"><i class="fa-solid fa-yen-sign" aria-hidden="true"></i></div>
             <div class="service-copy">
               <h3>買取・リユース</h3>
               <p>オフィス家具・備品を<br>しっかり買取・リユース</p>
@@ -101,9 +101,14 @@
           </a>
 
           <div class="service-center">
-            <span class="curve-arrow arrow-blue">➜</span>
-            <span class="curve-arrow arrow-red">➜</span>
-            <span class="curve-arrow arrow-green">➜</span>
+            <svg class="cycle-svg" viewBox="0 0 300 300" aria-hidden="true">
+              <path class="cycle-blue" d="M66 119 A98 98 0 0 1 148 54"/>
+              <polygon class="cycle-blue-fill" points="145,42 166,54 146,67"/>
+              <path class="cycle-red" d="M180 55 A98 98 0 0 1 249 145"/>
+              <polygon class="cycle-red-fill" points="260,139 251,161 239,143"/>
+              <path class="cycle-green" d="M236 211 A101 101 0 0 1 88 237"/>
+              <polygon class="cycle-green-fill" points="80,225 74,247 96,240"/>
+            </svg>
             <div class="center-disc">
               <strong>まるっと</strong>
               <span>オフィスの<br>あらゆるお困りごとを<br>ワンストップで</span>
@@ -112,7 +117,7 @@
           </div>
 
           <a class="service-card service-dispose" href="dispose.html">
-            <div class="service-icon coral">♻</div>
+            <div class="service-icon coral"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></div>
             <div class="service-copy">
               <h3>処分・廃棄</h3>
               <p>不用品の処分を<br>まとめて解決</p>
@@ -125,10 +130,10 @@
 
       <div class="support-panel">
         <div class="support-lead">こんなことも<br><strong>まるっと対応!</strong></div>
-        <div class="support-item"><div class="support-icon">🧹</div><div><b>オフィス清掃</b><span>定期・スポット清掃も</span></div></div>
-        <div class="support-item"><div class="support-icon">💻</div><div><b>IT・OAサポート</b><span>機器の導入・設定も</span></div></div>
-        <div class="support-item"><div class="support-icon">📄</div><div><b>各種手続きサポート</b><span>行政手続きもおまかせ</span></div></div>
-        <div class="support-item"><div class="support-icon">💬</div><div><b>その他のご相談</b><span>どんなお悩みもお気軽に</span></div></div>
+        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-broom-ball" aria-hidden="true"></i></div><div><b>オフィス清掃</b><span>定期・スポット清掃も</span></div></div>
+        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-laptop" aria-hidden="true"></i></div><div><b>IT・OAサポート</b><span>機器の導入・設定も</span></div></div>
+        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div><div><b>各種手続きサポート</b><span>行政手続きもおまかせ</span></div></div>
+        <div class="support-item"><div class="support-icon"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></div><div><b>その他のご相談</b><span>どんなお悩みもお気軽に</span></div></div>
       </div>
     </div>
   </section>
@@ -137,10 +142,10 @@
     <div class="container">
       <div class="section-title centered reason-title"><p>＼ まるっと便が選ばれる<span>4つ</span>の理由 ／</p></div>
       <div class="reasons-grid">
-        <article><span class="reason-no">01</span><div class="reason-icon">🤝</div><h3>ワンストップで解決</h3><p>移転から買取・処分、各種サポートまで、窓口ひとつでスムーズに対応します。</p></article>
-        <article><span class="reason-no">02</span><div class="reason-icon">👥</div><h3>グループの総合力</h3><p>買取・処分まで連携して対応。使えるものは活かし、不要なものは適正に処理します。</p></article>
-        <article><span class="reason-no">03</span><div class="reason-icon">🎧</div><h3>相談しやすい</h3><p>「何から決めればいいかわからない」という段階から、担当者が丁寧に整理します。</p></article>
-        <article><span class="reason-no">04</span><div class="reason-icon">🗾</div><h3>一都三県を中心に対応</h3><p>東京・埼玉・千葉・神奈川を中心に、内容に応じて柔軟にご相談いただけます。</p></article>
+        <article><span class="reason-no">01</span><div class="reason-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div><h3>ワンストップで解決</h3><p>移転から買取・処分、各種サポートまで、窓口ひとつでスムーズに対応します。</p></article>
+        <article><span class="reason-no">02</span><div class="reason-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div><h3>グループの総合力</h3><p>買取・処分まで連携して対応。使えるものは活かし、不要なものは適正に処理します。</p></article>
+        <article><span class="reason-no">03</span><div class="reason-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div><h3>相談しやすい</h3><p>「何から決めればいいかわからない」という段階から、担当者が丁寧に整理します。</p></article>
+        <article><span class="reason-no">04</span><div class="reason-icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div><h3>一都三県を中心に対応</h3><p>東京・埼玉・千葉・神奈川を中心に、内容に応じて柔軟にご相談いただけます。</p></article>
       </div>
     </div>
   </section>
@@ -167,7 +172,7 @@
     <div class="contact-shell">
       <img src="assets/daruma-main.webp" alt="福をまるっと だるま">
       <div class="contact-copy"><b>オフィスのことなら<br>まずはお気軽にご相談ください!</b><span>内容が決まっていなくてもOKです。</span></div>
-      <a class="btn btn-yellow contact-main" href="contact.html"><span class="mail-icon">✉</span>無料で相談する <b>→</b></a>
+      <a class="btn btn-yellow contact-main" href="contact.html"><i class="fa-regular fa-envelope mail-icon" aria-hidden="true"></i>無料で相談する <b>→</b></a>
       <a class="contact-phone" href="tel:0488789116"><span>お電話でのご相談もOK</span><strong>048-878-9116</strong><small>平日 9:00〜17:00</small></a>
     </div>
   </section>

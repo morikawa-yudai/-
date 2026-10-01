@@ -1,191 +1,174 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>まるっと便｜オフィス移転・買取・処分をワンストップで</title>
-<meta name="description" content="オフィス移転、家具・什器の買取・リユース、不用品・産業廃棄物の回収・処分まで。山田運輸の「まるっと便」が一都三県でワンストップ対応します。">
-<link rel="canonical" href="https://www.office-marutto.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="まるっと便｜オフィス移転・買取・処分をワンストップで">
-<meta property="og:description" content="オフィス移転、買取・リユース、処分・廃棄まで。オフィスの困りごとをまとめて解決します。">
-<meta name="theme-color" content="#ffffff">
+<title>まるっと便｜オフィスの困ったを、ぜんぶ、まるっと。</title>
+<meta name="description" content="オフィス移転、買取・リユース、処分・廃棄、清掃、IT・OAサポートまで。オフィスの困りごとをまるっと便がワンストップで解決します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500;700&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="marutto-home.css">
 </head>
-<body class="home-refined">
-<a class="skip" href="#main">本文へ移動</a>
+<body>
+<svg class="svg-defs" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+  <symbol id="i-yen" viewBox="0 0 24 24"><path d="m6 3 6 8 6-8"/><path d="M12 11v10"/><path d="M7 13h10M7 17h10"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14"/><path d="M10 11v6M14 11v6"/></symbol>
+  <symbol id="i-broom" viewBox="0 0 24 24"><path d="m15 3-5 12"/><path d="m8 13 5 2-2 6H5z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="11" rx="1"/><path d="M3 19h18M8 19l1-2h6l1 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M3 12 8 7l4 4 4-4 5 5"/><path d="m8 7 2-2 4 4 2-2"/><path d="m5 14 3 3 2-2 2 2 2-2 2 2 3-3"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 2-6 6-6s6 2 6 6M14 15c4 0 7 1.5 7 5"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v5h4v-6H4M20 13v5h-4v-6h4M16 19c-1 2-3 2-5 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-7 7-13a7 7 0 1 0-14 0c0 6 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+</svg>
+
 <header class="site-header">
   <div class="header-inner">
-    <a class="brand" href="index.html" aria-label="まるっと便 トップ">
-      <span class="brand-main">まるっと<b>便</b></span>
+    <a class="brand" href="#top" aria-label="まるっと便 トップ">
+      <span class="brand-main">まるっと<span>便</span></span>
       <span class="brand-sub">MARUTTO BIN</span>
     </a>
-    <div class="brand-tagline">まるっと、<br>まかせよう。</div>
-    <nav class="nav">
-      <a class="active" href="#services">サービス一覧</a>
-      <a href="works.html">導入事例</a>
+    <div class="brand-copy">まるっと、<br>まかせよう。</div>
+    <nav class="desktop-nav" aria-label="メインナビゲーション">
+      <a href="#services">サービス一覧</a>
+      <a href="#cases">導入事例</a>
       <a href="#reasons">選ばれる理由</a>
-      <a href="faq.html">よくあるご質問</a>
+      <a href="#faq">よくあるご質問</a>
     </nav>
-    <a class="cta cta-small" href="contact.html">無料で相談する <span>→</span></a>
+    <a class="header-cta" href="contact.html"><svg><use href="#i-mail"/></svg><span>無料で相談する</span><b>→</b></a>
     <button class="menu-button" aria-label="メニューを開く" aria-expanded="false">☰</button>
   </div>
   <nav class="mobile-nav" aria-hidden="true">
-    <a class="active" href="#services">サービス一覧</a>
-    <a href="works.html">導入事例</a>
-    <a href="#reasons">選ばれる理由</a>
-    <a href="faq.html">よくあるご質問</a>
-    <a class="cta" href="contact.html">無料で相談する →</a>
+    <a href="#services">サービス一覧</a><a href="#cases">導入事例</a><a href="#reasons">選ばれる理由</a><a href="#faq">よくあるご質問</a><a href="contact.html">無料で相談する →</a>
   </nav>
 </header>
 
-<main id="main">
-  <section class="home-hero">
-    <div class="home-hero-inner">
-      <div class="home-hero-copy">
-        <p class="hero-kana">まるっと、まかせよう。</p>
-        <h1>オフィスの困ったを、<br><span>ぜんぶ、まるっと。</span></h1>
-        <p class="home-hero-lead">移転、買取、処分・廃棄。<br>オフィスに関わる面倒な手配を、ひとつの窓口でまとめて。</p>
-        <div class="home-hero-actions">
-          <a class="cta" href="contact.html">無料で相談する <span>→</span></a>
-          <a class="text-link" href="#services">サービスを見る <span>→</span></a>
+<main id="top">
+  <section class="hero">
+    <div class="hero-deco hero-deco-a"></div><div class="hero-deco hero-deco-b"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>オフィスの困ったを、<br>ぜんぶ、<em>まるっと。</em></h1>
+        <p class="hero-services">配送・人材・処分・清掃・買取・サポート・採用・SNS・OA機器まで</p>
+        <p class="hero-lead">オフィスに関わるあらゆる悩みを、まるっと便がワンストップで解決。<br>面倒な手配や業者探しは、もう必要ありません。</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="contact.html"><svg><use href="#i-mail"/></svg>無料で相談する <b>→</b></a>
+          <a class="btn btn-outline" href="#services">サービスを見る <b>→</b></a>
         </div>
-        <div class="home-trust"><span>相談無料</span><span>一都三県対応</span><span>法人向け</span></div>
+        <div class="hero-trust"><span>相談無料</span><span>一都三県を中心に対応</span><span>法人・個人事業主どちらもOK</span></div>
       </div>
-      <div class="home-hero-visual">
-        <img class="home-hero-photo" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=88" alt="明るいオフィス空間">
-        <div class="hero-sign">OFFICE<br>MARUTTO</div>
-        <img class="hero-daruma-refined" src="assets/daruma-main.webp" alt="福をまるっと だるまキャラクター">
+      <div class="hero-visual">
+        <img class="hero-office-photo" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=88" alt="明るいオフィス">
+        <div class="hero-handwrite">まるっと、<br>まかせよう。</div>
+        <div class="hero-wall-logo"><b>まるっと便</b><small>MARUTTO BIN</small></div>
+        <div class="hero-bubble">オフィスの<br>「困った」を<br>まるっと解決!</div>
+        <img class="hero-daruma" src="assets/daruma-main.webp" alt="福をまるっと だるま">
       </div>
     </div>
   </section>
 
-  <section class="home-intro">
-    <div class="container intro-row">
-      <p class="intro-label">まるっと便について</p>
-      <p class="intro-copy">運ぶだけじゃない。<br><strong>移転の前後まで、まとめてやる。</strong></p>
-      <p class="intro-text">山田運輸が培ってきた現場力をベースに、オフィス移転・買取・リユース・処分まで一括で対応します。</p>
-    </div>
-  </section>
-
-  <section class="home-services" id="services">
+  <section class="services-section" id="services">
+    <div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div><div class="shape s4"></div>
     <div class="container">
-      <div class="home-section-title">
-        <p>3つの主なサービス</p>
-        <h2>オフィスの面倒を、<br>別々に頼まなくていい。</h2>
+      <div class="section-title centered">
+        <p>＼ まるっと便の<span>3つ</span>のサービス ／</p>
+        <h2>3つのサービスでオフィスの困りごとを解決</h2>
       </div>
 
-      <div class="service-editorial">
-        <a class="service-main-block" href="move.html">
-          <div class="service-main-photo"></div>
-          <div class="service-block-copy">
-            <span class="service-index">01</span>
-            <div><h3>移転</h3><p>オフィス移転の計画から、搬出・搬入・什器の設置まで。</p></div>
-            <span class="arrow-mark">→</span>
-          </div>
+      <div class="service-stage">
+        <a class="service-card move-card" href="move.html">
+          <div class="service-icon cyan"><svg><use href="#i-truck"/></svg></div>
+          <div class="service-text"><h3>移転</h3><p>オフィス移転を<br>スムーズにサポート</p><div class="chips"><span>移転作業</span><span>レイアウト変更</span><span>内装・原状回復</span></div></div>
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=84" alt="オフィス移転イメージ">
         </a>
-        <div class="service-side-stack">
-          <a class="service-side-block" href="reuse.html">
-            <div class="service-side-photo reuse-photo"></div>
-            <div class="service-side-copy"><span>02</span><div><h3>買取・リユース</h3><p>まだ使える家具や備品を、次の場所へ。</p></div><b>→</b></div>
-          </a>
-          <a class="service-side-block" href="dispose.html">
-            <div class="service-side-photo dispose-photo"></div>
-            <div class="service-side-copy"><span>03</span><div><h3>処分・廃棄</h3><p>不用品の回収から適正処分まで、まとめて。</p></div><b>→</b></div>
-          </a>
+
+        <a class="service-card reuse-card" href="reuse.html">
+          <div class="service-icon green"><svg><use href="#i-yen"/></svg></div>
+          <div class="service-text"><h3>買取・リユース</h3><p>オフィス家具・備品を<br>しっかり買取・リユース</p><div class="chips"><span>オフィス家具</span><span>OA機器</span><span>什器・備品</span></div></div>
+          <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=700&q=84" alt="オフィス家具の買取・リユース">
+        </a>
+
+        <div class="service-center">
+          <svg class="cycle-arrows" viewBox="0 0 320 320" aria-hidden="true">
+            <defs><marker id="arrB" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#2bbce9"/></marker><marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#ff6b5f"/></marker><marker id="arrG" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z" fill="#4bb979"/></marker></defs>
+            <path d="M70 120 A105 105 0 0 1 160 48" stroke="#2bbce9" marker-end="url(#arrB)"/>
+            <path d="M190 52 A105 105 0 0 1 262 142" stroke="#ff6b5f" marker-end="url(#arrR)"/>
+            <path d="M245 205 A105 105 0 0 1 88 235" stroke="#4bb979" marker-end="url(#arrG)"/>
+          </svg>
+          <div class="center-disc"><strong>まるっと</strong><span>オフィスの<br>あらゆるお困りごとを<br>ワンストップで</span></div>
+          <img class="center-daruma" src="assets/daruma-main.webp" alt="福をまるっと だるま">
         </div>
+
+        <a class="service-card dispose-card" href="dispose.html">
+          <div class="service-icon coral"><svg><use href="#i-trash"/></svg></div>
+          <div class="service-text"><h3>処分・廃棄</h3><p>不用品の処分を<br>まとめて解決</p><div class="chips"><span>不用品回収</span><span>産業廃棄物処理</span><span>機密書類</span></div></div>
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=84" alt="オフィス不用品の処分">
+        </a>
       </div>
 
-      <div class="service-support-line">
-        <span>その前後も対応できます。</span>
-        <a href="move.html">配送・運搬</a>
-        <a href="move.html">什器組立・レイアウト</a>
-        <a href="area.html">一時保管</a>
-        <a href="contact.html">オフィスサポート</a>
+      <div class="support-panel">
+        <div class="support-lead">こんなことも<br><strong>まるっと対応!</strong></div>
+        <div class="support-item"><svg><use href="#i-broom"/></svg><div><b>オフィス清掃</b><span>定期・スポット清掃も</span></div></div>
+        <div class="support-item"><svg><use href="#i-laptop"/></svg><div><b>IT・OAサポート</b><span>機器の導入・設定も</span></div></div>
+        <div class="support-item"><svg><use href="#i-doc"/></svg><div><b>各種手続きサポート</b><span>行政手続きもおまかせ</span></div></div>
+        <div class="support-item"><svg><use href="#i-chat"/></svg><div><b>その他のご相談</b><span>まずは気軽にご相談を</span></div></div>
       </div>
     </div>
   </section>
 
-  <section class="home-reasons" id="reasons">
-    <div class="container reasons-layout-refined">
-      <div class="home-section-title left-title">
-        <p>選ばれる理由</p>
-        <h2>現場を知っているから、<br>話が早い。</h2>
-      </div>
-      <div class="reason-lines">
-        <article><span>01</span><h3>運送会社としての現場力</h3><p>1977年の設立以来、物流の現場で積み重ねてきた経験を、オフィス移転にも活かします。</p></article>
-        <article><span>02</span><h3>窓口をひとつにできる</h3><p>移転・買取・処分をまとめて相談できるので、業者ごとの連絡や日程調整を減らせます。</p></article>
-        <article><span>03</span><h3>小さな相談にも対応</h3><p>家具1点の回収から、複数台の車両が必要な案件まで。規模に合わせて柔軟に動きます。</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-works">
+  <section class="reasons-section" id="reasons">
     <div class="container">
-      <div class="home-section-title compact-title">
-        <p>導入事例</p>
-        <h2>こんなご依頼に対応しています。</h2>
+      <div class="section-title centered reason-title"><p>＼ まるっと便が選ばれる<span>4つ</span>の理由 ／</p></div>
+      <div class="reasons-grid">
+        <article><span class="reason-no">01</span><div class="reason-icon"><svg><use href="#i-hand"/></svg></div><h3>ワンストップで解決</h3><p>移転から買取・処分、各種サポートまで、窓口ひとつでスムーズに対応します。</p></article>
+        <article><span class="reason-no">02</span><div class="reason-icon"><svg><use href="#i-people"/></svg></div><h3>グループの総合力</h3><p>買取・処分まで連携して対応。使えるものは活かし、不要なものは適正に処理します。</p></article>
+        <article><span class="reason-no">03</span><div class="reason-icon"><svg><use href="#i-headset"/></svg></div><h3>相談しやすい</h3><p>「何から決めればいいかわからない」という段階から、担当者が丁寧に整理します。</p></article>
+        <article><span class="reason-no">04</span><div class="reason-icon"><svg><use href="#i-pin"/></svg></div><h3>一都三県を中心に対応</h3><p>東京・埼玉・千葉・神奈川を中心に、内容に応じて柔軟にご相談いただけます。</p></article>
       </div>
-      <div class="works-editorial">
-        <a href="works.html" class="work-editorial-item"><div class="work-photo work-one"></div><h3>新規オフィスの設営・什器搬入</h3><p>家具の搬入から組立・配置まで。</p></a>
-        <a href="works.html" class="work-editorial-item"><div class="work-photo work-two"></div><h3>事務所の移転作業</h3><p>旧拠点の搬出から新拠点への搬入まで。</p></a>
-        <a href="works.html" class="work-editorial-item"><div class="work-photo work-three"></div><h3>倉庫・オフィスの現場対応</h3><p>関連する作業もまとめてご相談いただけます。</p></a>
-      </div>
-      <a class="plain-more" href="works.html">導入事例をもっと見る →</a>
     </div>
   </section>
 
-  <section class="home-flow">
-    <div class="container flow-layout-refined">
-      <div class="home-section-title left-title"><p>ご利用の流れ</p><h2>相談から完了まで、<br>5ステップ。</h2></div>
-      <ol class="flow-plain">
-        <li><span>01</span><b>お問い合わせ</b><small>電話・フォーム</small></li>
-        <li><span>02</span><b>ヒアリング</b><small>内容・現場を確認</small></li>
-        <li><span>03</span><b>お見積り</b><small>進め方をご提案</small></li>
-        <li><span>04</span><b>作業実施</b><small>安全・丁寧に対応</small></li>
-        <li><span>05</span><b>完了</b><small>必要に応じてフォロー</small></li>
-      </ol>
+  <section class="cases-section" id="cases">
+    <div class="container cases-inner">
+      <div><span class="mini-label">CASE / SUPPORT</span><h2>「どこに頼めばいい？」を、<br>なくしていく。</h2><p>移転担当者さまの負担を減らすために、案件ごとに必要な作業を整理し、最適な進め方をご提案します。</p></div>
+      <ul><li>移転と同時に不用品を整理したい</li><li>売れる家具は買い取ってほしい</li><li>OA機器やネットワークもまとめたい</li><li>退去日までに原状回復まで終わらせたい</li></ul>
     </div>
   </section>
 
-  <section class="home-faq">
-    <div class="container faq-layout-refined">
-      <div class="home-section-title left-title"><p>よくあるご質問</p><h2>まずは相談だけでも、<br>大丈夫です。</h2><a class="plain-more" href="faq.html">FAQをすべて見る →</a></div>
+  <section class="faq-section" id="faq">
+    <div class="container faq-wrap">
+      <div class="faq-heading"><span>FAQ</span><h2>よくあるご質問</h2><p>内容がまだ固まっていなくても大丈夫です。</p></div>
       <div class="faq-list">
-        <details open><summary>どの規模から対応できますか？</summary><p>デスク1台の回収など小さなご依頼から、トラック複数台が必要な規模まで幅広くご相談いただけます。</p></details>
-        <details><summary>エレベーターがない建物でも大丈夫ですか？</summary><p>階段で搬出入できる物であれば対応可能です。重量物などは事前に現場条件を確認します。</p></details>
-        <details><summary>移転と不用品処分を同時に頼めますか？</summary><p>はい。移転・買取・処分をまとめてご相談いただけることが、まるっと便の特徴です。</p></details>
+        <details open><summary>移転と処分・買取をまとめて依頼できますか？</summary><p>はい。まるっと便では移転・買取・処分をひとつの窓口でまとめてご相談いただけます。</p></details>
+        <details><summary>オフィス家具1点だけでも相談できますか？</summary><p>案件規模にかかわらずご相談可能です。まずは内容と場所をお聞かせください。</p></details>
+        <details><summary>まだ日程や数量が決まっていません。</summary><p>問題ありません。現状を伺いながら、必要な作業と進め方を一緒に整理します。</p></details>
       </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-shell">
+      <img src="assets/daruma-main.webp" alt="福をまるっと だるま">
+      <div class="contact-copy"><b>オフィスのことなら<br>まずはお気軽にご相談ください!</b><span>内容が決まっていなくてもOKです。</span></div>
+      <a class="btn btn-yellow contact-main" href="contact.html"><svg><use href="#i-mail"/></svg>無料で相談する <b>→</b></a>
+      <a class="contact-phone" href="tel:0488789116"><span>お電話でのご相談もOK</span><strong>048-878-9116</strong><small>平日 9:00〜17:00</small></a>
     </div>
   </section>
 </main>
 
-<section class="contact-band home-contact-refined">
-  <div class="container contact-inner">
-    <div>
-      <p class="contact-kana">オフィスのこと、まるっと。</p>
-      <h2>まずは、今困っていることを<br><strong>そのまま聞かせてください。</strong></h2>
-      <p>内容がまだ固まっていなくても大丈夫です。移転・買取・処分から整理してご提案します。</p>
-      <div class="contact-actions"><a class="cta" href="contact.html">無料で相談する →</a><a class="phone-button" href="tel:0488789116">048-878-9116</a></div>
-    </div>
-    <img class="contact-daruma" src="assets/daruma-main.webp" alt="まるっと便キャラクター">
-  </div>
-</section>
-
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><div class="brand-main">まるっと<b>便</b></div><p>山田運輸有限会社が運営する、法人向けオフィス移転・買取・リユース・産業廃棄物回収のワンストップサービスです。</p></div>
-      <div class="footer-col"><b>SERVICE</b><a href="move.html">オフィス移転</a><a href="reuse.html">買取・リユース</a><a href="dispose.html">処分・廃棄</a></div>
-      <div class="footer-col"><b>GUIDE</b><a href="works.html">導入事例</a><a href="area.html">対応エリア</a><a href="faq.html">よくある質問</a></div>
-      <div class="footer-col"><b>COMPANY</b><a href="about.html">まるっと便について</a><a href="company.html">運営会社</a><a href="privacy.html">プライバシーポリシー</a></div>
-    </div>
-    <div class="copyright"><span>© <span data-year></span> YAMADA TRANSPORT Co., Ltd.</span><span>受付 9:00–17:00（月〜金） / TEL 048-878-9116</span></div>
+  <div class="footer-inner">
+    <a class="brand footer-brand" href="#top"><span class="brand-main">まるっと<span>便</span></span><span class="brand-sub">MARUTTO BIN</span></a>
+    <div class="footer-tagline">まるっと、<br>まかせよう。</div>
+    <nav><a href="#services">サービス一覧</a><a href="#cases">導入事例</a><a href="#reasons">選ばれる理由</a><a href="#faq">よくあるご質問</a><a href="company.html">会社情報</a></nav>
+    <div class="footer-legal"><a href="privacy.html">プライバシーポリシー</a><span>© YAMADA TRANSPORT Co., Ltd.</span></div>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

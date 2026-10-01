@@ -297,3 +297,69 @@ body{
 @media(max-width:700px){
   .cycle-svg{width:290px;height:290px;inset:-5px}
 }
+
+
+/* pixel-polish pass: reference-locked */
+.header-inner{max-width:941px;width:calc(100% - 30px);gap:18px}
+.brand-img-wrap{width:160px;flex:0 0 160px}
+.brand-img{width:160px;height:auto;display:block}
+.brand-copy{font-family:'Noto Sans JP',sans-serif;font-size:11px;line-height:1.45;padding-left:16px}
+.desktop-nav{gap:22px;font-size:11px}
+.header-cta{font-size:11px;padding:11px 18px;border-radius:26px}
+.hero-inner{max-width:941px;width:calc(100% - 30px);grid-template-columns:48% 52%}
+.hero-copy{padding:52px 24px 34px 2px}
+.hero h1{font-size:52px;line-height:1.08;letter-spacing:-.06em;margin-bottom:22px}
+.hero-services{font-size:10.5px}
+.hero-lead{font-size:11px;line-height:1.85}
+.hero-actions{margin:24px 0 17px}
+.hero-trust{font-size:9.5px;gap:12px}
+.hero-visual{min-height:445px}
+.hero-photo{border-bottom-left-radius:54px}
+.hero-handwrite{font-size:21px;left:17%;top:62px}
+.hero-wall-logo{right:8%;top:96px}
+.hero-wall-logo b{font-size:29px}
+.hero-bubble{right:5%;top:180px;width:114px;font-size:10px}
+.hero-daruma{width:132px;right:7%;bottom:18px}
+
+.services-section{padding-top:32px}
+.container{max-width:941px;width:calc(100% - 30px)}
+.section-title p{font-size:17px}
+.section-title p span{font-size:33px}
+.section-title h2{font-size:40px;margin:2px 0 24px}
+.service-stage{max-width:880px}
+.service-move{width:470px;grid-template-columns:66px 1fr 158px;padding:15px}
+.service-move img{width:158px;height:128px}
+.service-lower{grid-template-columns:1fr 260px 1fr;gap:16px;margin-top:2px}
+.service-reuse,.service-dispose{grid-template-columns:62px 1fr 98px;padding:14px}
+.service-reuse img,.service-dispose img{width:98px;height:118px}
+.service-icon{width:54px;height:54px}
+.service-copy h3{font-size:23px}
+.service-copy p{font-size:13px}
+.center-disc{width:200px;height:200px}
+.center-disc strong{font-size:38px}
+.center-disc span{font-size:12.5px}
+.service-center{height:280px}
+.service-center img{width:74px;bottom:8px}
+.cycle-svg{width:284px;height:284px;inset:-2px}
+
+.support-panel{max-width:900px;border-width:6px;border-radius:28px;padding:13px 15px;grid-template-columns:1.08fr repeat(4,1fr)}
+.support-lead{font-size:15px;padding-left:10px}
+.support-lead strong{font-size:23px}
+.support-item{padding:6px 8px;gap:8px}
+.support-icon{width:36px;height:36px}
+.support-icon i{font-size:25px}
+.support-item b{font-size:11px}
+.support-item span{font-size:7.5px}
+
+.reason-title p{font-size:16px}
+.reasons-grid{max-width:870px;margin:auto;gap:10px}
+.reasons-grid article{padding:17px 15px 19px;border-radius:20px}
+.reason-icon{height:61px}
+.reason-icon i{font-size:39px}
+.reasons-grid h3{font-size:14px}
+.reasons-grid p{font-size:9px}
+
+.contact-shell{max-width:900px;width:calc(100% - 30px);border-width:6px;border-radius:28px}
+.footer-inner{max-width:941px;width:calc(100% - 30px)}
+.footer-brand.brand-img-wrap{width:126px;flex-basis:126px}
+.footer-brand .brand-img{width:126px}

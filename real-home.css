@@ -169,3 +169,145 @@ footer{border-top:1px solid #e4eef2;background:#fff;padding:21px 0 26px}
   .contact-box{grid-template-columns:65px 1fr;padding:13px;border-width:5px}.contact-box>.cta,.phone{grid-column:1/-1}
   .footer{grid-template-columns:1fr;text-align:center}.footer .logo{justify-self:center}.footer>.tagline{display:none}.legal{text-align:center}
 }
+
+
+/* Wide desktop composition — use the browser, don't shrink the reference into the center */
+@media (min-width:1021px){
+  :root{--max:1340px}
+
+  .header{
+    width:min(1420px,calc(100% - 72px));
+    gap:26px;
+  }
+  .logo-main{font-size:34px}
+  .tagline{font-size:11px;padding-left:20px}
+  .nav{gap:31px;font-size:12px}
+  .cta-head{min-height:48px;padding:0 24px;font-size:12px}
+
+  .hero-inner{
+    width:min(1420px,calc(100% - 72px));
+    grid-template-columns:44% 56%;
+    min-height:590px;
+  }
+  .hero-copy{
+    padding:72px 54px 42px 8px;
+  }
+  .hero h1{
+    font-size:64px;
+    line-height:1.07;
+    margin-bottom:27px;
+  }
+  .hero-mini{font-size:12px;margin-bottom:9px}
+  .hero-text{font-size:12px;line-height:1.95}
+  .hero-btns{gap:16px;margin:31px 0 21px}
+  .hero-btns .cta{min-height:56px;padding:0 28px;font-size:14px}
+  .trust{gap:17px;font-size:10px}
+
+  .hero-photo-wrap{min-height:590px}
+  .hero-photo{border-bottom-left-radius:70px}
+  .handwrite{left:14%;top:86px;font-size:25px}
+  .wall-logo{right:7%;top:124px}
+  .wall-logo b{font-size:34px}
+  .bubble{right:4%;top:223px;width:126px;font-size:11px;padding:17px 10px}
+  .hero-daruma{width:154px;right:6%;bottom:24px}
+
+  .wrap{
+    width:min(1340px,calc(100% - 72px));
+  }
+
+  .services{
+    padding:55px 0 90px;
+  }
+  .section-head p{font-size:20px}
+  .section-head p strong{font-size:39px}
+  .section-head h2{
+    font-size:49px;
+    margin:6px 0 36px;
+  }
+
+  .service-layout{max-width:1180px}
+  .svc-move{
+    width:590px;
+    grid-template-columns:78px 1fr 200px;
+    padding:19px 20px;
+    margin-bottom:16px;
+  }
+  .svc-move>img{width:200px;height:155px}
+  .service-row{
+    grid-template-columns:1fr 330px 1fr;
+    gap:28px;
+  }
+  .svc-side{
+    grid-template-columns:74px 1fr 126px;
+    padding:19px;
+  }
+  .svc-side>img{width:126px;height:148px}
+  .svc-icon{width:64px;height:64px}
+  .svc-icon svg{width:32px;height:32px}
+  .svc-copy{padding:0 12px}
+  .svc-copy h3{font-size:27px;padding-bottom:10px;margin-bottom:10px}
+  .svc-copy p{font-size:14px}
+  .pills{gap:7px;margin-top:11px}
+  .pills span{font-size:8px;padding:5px 9px}
+
+  .cycle{height:330px}
+  .cycle-arrows{width:315px;height:315px}
+  .cycle-disc{width:222px;height:222px}
+  .cycle-disc strong{font-size:42px}
+  .cycle-disc span{font-size:13px}
+  .cycle-daruma{width:82px;bottom:8px}
+
+  .support-strip{
+    max-width:1210px;
+    margin-top:27px;
+    grid-template-columns:1.1fr repeat(4,1fr);
+    padding:16px 18px;
+    border-width:7px;
+    border-radius:32px;
+  }
+  .support-title{font-size:17px;padding-left:12px}
+  .support-title strong{font-size:27px}
+  .support-cell{padding:8px 12px;gap:11px}
+  .support-cell svg{width:35px;height:35px}
+  .support-cell b{font-size:12px}
+  .support-cell span{font-size:8px}
+
+  .reasons{padding:43px 0 80px}
+  .reason-heading{font-size:19px;margin-bottom:25px}
+  .reason-heading strong{font-size:38px}
+  .reason-grid{max-width:1180px;gap:16px}
+  .reason-grid article{padding:22px 20px 24px;border-radius:24px}
+  .reason-grid .no{width:35px;height:35px;font-size:12px}
+  .reason-grid svg{width:50px;height:50px;margin-top:13px}
+  .reason-grid h3{font-size:16px}
+  .reason-grid p{font-size:10px}
+
+  .case-grid,.faq-grid{
+    width:min(1240px,calc(100% - 72px));
+  }
+  .case-grid{gap:86px}
+  .case-grid h2{font-size:40px}
+  .case-grid p,.case-grid li{font-size:12px}
+
+  .faq-grid{grid-template-columns:330px 1fr;gap:80px}
+  .faq-grid h2{font-size:38px}
+  summary{font-size:13px}
+  details p{font-size:11px}
+
+  .contact-box{
+    width:min(1180px,calc(100% - 72px));
+    grid-template-columns:100px 1.15fr 1fr 1fr;
+    padding:18px 26px;
+    gap:20px;
+    border-width:7px;
+    border-radius:32px;
+  }
+  .contact-box>.daruma{width:82px}
+  .contact-copy b{font-size:15px}
+  .contact-copy small{font-size:8px}
+  .phone strong{font-size:20px}
+
+  .footer{
+    width:min(1340px,calc(100% - 72px));
+  }
+}

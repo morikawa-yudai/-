@@ -4,77 +4,138 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>まるっと便｜オフィスの困ったを、ぜんぶ、まるっと。</title>
-<meta name="description" content="オフィス移転、買取・リユース、処分・廃棄、清掃、IT・OAサポートまで。オフィスの困りごとをまるっと便がワンストップで解決します。">
-<style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;background:#fff}
-body{margin:0;background:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}
-.shell{position:relative;width:min(992px,100vw);margin:0 auto;background:#fff;min-height:100vh;overflow:hidden}
-#reference{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
-.loading{min-height:100vh;display:grid;place-items:center;color:#67747b;font-size:13px;letter-spacing:.03em;background:#fff}
-.hotspot{position:absolute;z-index:5;display:block;background:transparent;border:0;border-radius:10px}
-.hotspot:focus-visible{outline:3px solid #20b9e8;outline-offset:2px}
-.anchor{position:absolute;left:0;width:1px;height:1px;pointer-events:none}
-@media(max-width:700px){
-  .shell{width:100vw}
-  .hotspot{border-radius:6px}
-}
-</style>
+<meta name="description" content="オフィス移転・買取・処分・廃棄・清掃・IT/OAまで。オフィスの困りごとを窓口ひとつでまとめて相談できる、まるっと便。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="marutto-lp.css">
 </head>
 <body>
-<div class="shell">
-  <div id="loading" class="loading">まるっと便を読み込み中...</div>
-  <img id="reference" alt="まるっと便 オフィスサポートサイト" hidden>
+<svg class="defs" aria-hidden="true">
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.8"/><path d="m4 7 8 6 8-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-yen" viewBox="0 0 24 24"><path d="m6 3 6 8 6-8M12 11v10M7 13h10M7 17h10"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 14h8l1-14M10 11v6M14 11v6"/></symbol>
+<symbol id="i-broom" viewBox="0 0 24 24"><path d="m15 3-5 12M8 13l5 2-2 6H5z"/></symbol>
+<symbol id="i-pc" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="11" rx="1.5"/><path d="M3 19h18M9 17h6"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6M9 16h6"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><circle cx="8" cy="10.5" r=".7"/><circle cx="12" cy="10.5" r=".7"/><circle cx="16" cy="10.5" r=".7"/></symbol>
+</svg>
 
-  <span id="services" class="anchor" style="top:28%"></span>
-  <span id="reasons" class="anchor" style="top:73%"></span>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top"><span class="brand-main">まるっと<span>便</span></span><span class="brand-sub">MARUTTO BIN</span></a>
+    <div class="brand-tagline">まるっと、<br>まかせよう。</div>
+    <nav class="desktop-nav">
+      <a href="#services">サービス</a>
+      <a href="#problems">お悩み</a>
+      <a href="#support">まるっと対応</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <a class="header-cta" href="contact.html"><svg><use href="#i-mail"/></svg>無料で相談する <b>→</b></a>
+  </div>
+</header>
 
-  <a class="hotspot" href="contact.html" aria-label="無料で相談する"
-     style="left:76%;top:.7%;width:20%;height:3.6%"></a>
-  <a class="hotspot" href="contact.html" aria-label="無料で相談する"
-     style="left:4.4%;top:20.0%;width:26%;height:3.9%"></a>
-  <a class="hotspot" href="#services" aria-label="サービスを見る"
-     style="left:31%;top:20.0%;width:20%;height:3.9%"></a>
+<main id="top">
+<section class="hero">
+  <span class="decor decor-left"></span><span class="decor decor-dot"></span>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">オフィスのこと、まとめてお任せ。</p>
+      <h1>オフィスの困ったを、<br>ぜんぶ、<em>まるっと。</em></h1>
+      <p class="hero-lead">移転・買取・処分・清掃・IT/OAまで。<br>面倒な手配や業者探しを、窓口ひとつでまとめて解決します。</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="contact.html"><svg><use href="#i-mail"/></svg>無料で相談する <b>→</b></a>
+        <a class="btn btn-sub" href="#services">サービスを見る <b>→</b></a>
+      </div>
+      <div class="trust-row">
+        <span><svg><use href="#i-check"/></svg>相談無料</span>
+        <span><svg><use href="#i-check"/></svg>一都三県中心</span>
+        <span><svg><use href="#i-check"/></svg>法人・個人事業主OK</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=90" alt="明るいオフィス">
+      <div class="hero-note">まるっと、<br>まかせよう。</div>
+      <div class="hero-bubble">オフィスの<br>「困った」を<br>まるっと解決!</div>
+      <img class="hero-daruma" src="assets/daruma-main.webp" alt="福をまるっと だるま">
+    </div>
+  </div>
+</section>
 
-  <a class="hotspot" href="move.html" aria-label="移転サービス"
-     style="left:27%;top:35.6%;width:42%;height:11.8%"></a>
-  <a class="hotspot" href="reuse.html" aria-label="買取・リユース"
-     style="left:2.2%;top:48.2%;width:34%;height:11.8%"></a>
-  <a class="hotspot" href="dispose.html" aria-label="処分・廃棄"
-     style="left:63.5%;top:48.2%;width:34%;height:11.8%"></a>
+<section class="problem-section" id="problems">
+  <div class="section-wrap">
+    <div class="problem-heading">
+      <span>こんなお悩みありませんか？</span>
+      <h2>その面倒、<br><strong>まるっと便なら窓口ひとつ。</strong></h2>
+    </div>
+    <div class="problem-grid">
+      <article><b>01</b><p>移転と処分を<br>別々に頼むのが面倒</p></article>
+      <article><b>02</b><p>売れる家具があるか<br>わからない</p></article>
+      <article><b>03</b><p>退去まで時間がなく<br>段取りが大変</p></article>
+      <article><b>04</b><p>清掃やOAも<br>まとめて頼みたい</p></article>
+    </div>
+  </div>
+</section>
 
-  <a class="hotspot" href="#reasons" aria-label="選ばれる理由"
-     style="left:28%;top:70.4%;width:44%;height:4%"></a>
+<section class="services-section" id="services">
+  <span class="shape shape-a"></span><span class="shape shape-b"></span><span class="shape shape-c"></span>
+  <div class="section-wrap">
+    <div class="section-title">
+      <p>＼ まるっと便の <strong>3つ</strong> の主なサービス ／</p>
+      <h2>運ぶ。売る。処分する。<br>全部つながっているから、手間が減る。</h2>
+    </div>
 
-  <a class="hotspot" href="contact.html" aria-label="無料で相談する"
-     style="left:38%;top:90.3%;width:29%;height:3.7%"></a>
-  <a class="hotspot" href="tel:0488789116" aria-label="電話で相談する"
-     style="left:68%;top:90.3%;width:27%;height:3.7%"></a>
-</div>
+    <div class="service-loop">
+      <a class="service-card service-move" href="move.html">
+        <div class="service-icon blue"><svg><use href="#i-truck"/></svg></div>
+        <div class="service-body"><span>01</span><h3>移転</h3><p>移転計画から搬出・搬入、什器設置まで。</p></div>
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=86" alt="オフィス移転">
+      </a>
 
-<script>
-(async()=>{
-  const img=document.getElementById('reference');
-  const loading=document.getElementById('loading');
-  try{
-    const files=Array.from({length:21},(_,i)=>'ref/chunk'+String(i+1).padStart(2,'0')+'.txt');
-    const parts=[];
-    for(const file of files){
-      const response=await fetch(file,{cache:'force-cache'});
-      if(!response.ok) throw new Error('failed: '+file);
-      parts.push((await response.text()).trim());
-    }
-    img.onload=()=>{
-      loading.remove();
-      img.hidden=false;
-    };
-    img.onerror=()=>{throw new Error('image decode failed')};
-    img.src='data:image/webp;base64,'+parts.join('');
-  }catch(error){
-    console.error(error);
-    loading.textContent='読み込みに失敗しました。ページを再読み込みしてください。';
-  }
-})();
-</script>
+      <a class="service-card service-reuse" href="reuse.html">
+        <div class="service-icon green"><svg><use href="#i-yen"/></svg></div>
+        <div class="service-body"><span>02</span><h3>買取・リユース</h3><p>使える家具・備品は買取・再活用へ。</p></div>
+        <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=900&q=86" alt="オフィス家具">
+      </a>
+
+      <div class="cycle-core">
+        <svg viewBox="0 0 280 280" aria-hidden="true">
+          <path class="arrow blue-arrow" d="M45 115 A95 95 0 0 1 130 44"/><polygon class="blue-fill" points="127,34 150,45 130,59"/>
+          <path class="arrow red-arrow" d="M166 45 A95 95 0 0 1 240 135"/><polygon class="red-fill" points="251,130 241,153 228,134"/>
+          <path class="arrow green-arrow" d="M224 204 A98 98 0 0 1 77 229"/><polygon class="green-fill" points="70,218 63,240 88,231"/>
+        </svg>
+        <div class="cycle-disc"><strong>まるっと</strong><span>オフィスの<br>困りごとを<br>ワンストップで</span></div>
+        <img src="assets/daruma-main.webp" alt="">
+      </div>
+
+      <a class="service-card service-dispose" href="dispose.html">
+        <div class="service-icon red"><svg><use href="#i-trash"/></svg></div>
+        <div class="service-body"><span>03</span><h3>処分・廃棄</h3><p>残った不用品は適正に回収・処理。</p></div>
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=86" alt="オフィス不用品の処分">
+      </a>
+    </div>
+
+    <div class="support-strip" id="support">
+      <div class="support-title">こんなことも<br><strong>まるっと対応!</strong></div>
+      <div class="support-item"><svg><use href="#i-broom"/></svg><div><b>オフィス清掃</b><span>定期・スポット対応</span></div></div>
+      <div class="support-item"><svg><use href="#i-pc"/></svg><div><b>IT・OAサポート</b><span>機器導入・設定</span></div></div>
+      <div class="support-item"><svg><use href="#i-doc"/></svg><div><b>原状回復・手続き</b><span>退去前の整理も</span></div></div>
+      <div class="support-item"><svg><use href="#i-chat"/></svg><div><b>その他のご相談</b><span>まずは気軽に</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="first-cta">
+  <div class="first-cta-inner">
+    <img src="assets/daruma-main.webp" alt="">
+    <div><b>何を頼むか決まっていなくても大丈夫。</b><span>今の状況を教えてください。</span></div>
+    <a class="btn btn-main" href="contact.html"><svg><use href="#i-mail"/></svg>無料で相談する <b>→</b></a>
+  </div>
+</section>
+</main>
+
+<div class="mobile-sticky"><a href="tel:0488789116">電話</a><a href="contact.html">無料相談</a></div>
 </body>
 </html>
